@@ -1,0 +1,936 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(/Maxdi_home/Assert/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(/Maxdi_home/Assert/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Medium;
+    src: url(/Maxdi_home/Assert/fonts/OpenSans-Medium.ttf);
+}
+
+:root {
+    --background: #fffef2;
+    --black: #000000;
+    --white: #ffffff;
+    --navbar: #1d233a;
+    --navbtn: #7432ff;
+    --line-text: #f2dac0;
+    --after-text: #4a4f61;
+    --hover-bg: rgb(35, 35, 76);
+    --hover: #23234c;
+    --s-btn: #b3b8d5;
+    --card-bg-c: #232745;
+    --square: #c5f617;
+    --accordion-line: #8b61ff;
+    --font_1: Poppins-Medium;
+    --font_2: OpenSans-Medium;
+    --font_3: "Open Sans", sans-serif;
+    --font_4: "Font Awesome 6 Free";
+}
+
+a,
+span,
+a:hover,
+a:active,
+button {
+    text-decoration: none;
+}
+
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+ul,
+a {
+    list-style: none;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.cm-overflow {
+    overflow: hidden;
+}
+
+ol,
+ul {
+    padding-left: 0px;
+}
+
+// *********************************************************************************************************************************************
+
+.lets_work_area_portfolio {
+    background: var(--background);
+}
+
+.technology_data {
+    padding: 120px 0 80px 0;
+}
+
+a {
+    color: #7432ff;
+    transition: all .5s ease-out;
+}
+
+
+
+.effect2 {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.effect2:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #595959;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.effect2:hover,
+.effect2:focus,
+.effect2:active {
+    color: #1d233a;
+}
+
+.effect2:hover:before,
+.effect2:focus:before,
+.effect2:active:before {
+    transform: scale(0);
+}
+
+/*************************
+    ********* Portfolio CSS ******
+    **************************/
+a.effect2.current {
+
+    color: #7432ff;
+}
+
+a.effect2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #4C5A67;
+    transition: 0.3s;
+    position: relative;
+}
+
+.portfolio-filter {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.portfolio-filter>li {
+    display: inline-block;
+    padding: 0 15px 25px;
+    cursor: pointer;
+}
+
+// .portfolio-filter>li a {}
+
+.portfolio-filter>li a:before {
+    background: #fff;
+}
+
+// .portfolio-filter>li a:hover,
+// .portfolio-filter>li a.active {}
+
+/* Start: Recommended Isotope styles */
+/**** Isotope Filtering ****/
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    transition-property: transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+    transition: none;
+}
+
+.blog-wrapper {
+    background: var(--white-color);
+    border: 1px solid #F7F7F7;
+    box-shadow: 0 10px 30px rgba(162, 182, 212, .15);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.blog-wrapper .blog-img {
+    width: 100%;
+    height: 245px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.blog-wrapper .blog-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.blog-list .blog .blog-content {
+    padding: 20px 10px 20px 10px;
+    position: relative;
+}
+
+.blog-list .blog .blog-content .b-user {
+    position: absolute;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    right: 40px;
+}
+
+.blog-list .blog .blog-content .b-user img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-wrapper .blog-content p.blog-cat {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #7432ff;
+    margin: 0 0 20px 0;
+}
+
+.blog-wrapper .blog-content p.blog-date {
+    margin: 0 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(71 79 98 / 70%);
+    display: flex;
+    align-items: center;
+}
+
+.blog-wrapper .blog-content p.blog-date svg {
+    margin-right: 10px;
+}
+
+.blog-wrapper .blog-content p.blog-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: .5px;
+    color: #474F62;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 52px;
+}
+
+.blog-list .blog .blog-content p.blog-bottom {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.read-more-link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7432ff;
+}
+
+.read-more-link svg {
+    margin-left: 10px;
+    transition: ease-in-out .5s;
+    fill: #7432ff !important; 
+}
+
+.bsf-rt-display-label:after {
+    content: attr(prefix);
+}
+
+.bsf-rt-display-time:after {
+    content: attr(reading_time);
+}
+
+.bsf-rt-display-postfix:after {
+    content: attr(postfix);
+}
+
+.blog-list .blog .blog-content p.blog-bottom {
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+// *********************************************************************Flutter***************************************************************
+.fix {
+    overflow: hidden;
+}
+
+.pb-120 {
+    padding-bottom: 7.5rem;
+}
+
+.pt-120 {
+    padding: 7.5rem 0 0 0;
+}
+
+section.flutter {
+    position: relative;
+    padding: 7.5rem 0 110px 0;
+}
+
+// .page__title-wrapper{
+// }
+// .time_date {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+// }
+// .time_date p {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+.flutter_banner .flutter_heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: .04em;
+    color: #7432ff;
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.flutter_banner h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1d233a;
+    margin: 0;
+    text-align: center;
+}
+
+.flutter_user {
+    padding-top: 35px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flutter_user .bb_user_img {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.flutter_user .bb_user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flutter_user h2.bb-u-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150.5%;
+    letter-spacing: .5px;
+    color: #474F62;
+    margin: 10px 0 5px 0;
+}
+
+.flutter_user p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 150.5%;
+    letter-spacing: .5px;
+    color: #192734;
+    margin: 0;
+}
+
+
+.row.blog-column-reverse {
+    padding: 60px 0 0 0;
+}
+
+.blog-content-wrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4C5A67;
+    margin: 0 0 15px 0;
+}
+
+.blog-content-wrapper h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 60px;
+    color: #192734;
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+
+.blog-content-wrapper p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4C5A67;
+    margin: 0 0 15px 0;
+}
+
+figure {
+    margin: 0 0 1rem;
+}
+
+.blog-content-wrapper .wp-block-table table {
+    background: none !important;
+    border: 1px solid;
+    margin: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.mark,
+mark {
+    padding: .2em;
+    background-color: #fcf8e3;
+}
+
+.blog-content-wrapper .wp-block-table table tr td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.blog-content-wrapper h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 40px;
+    color: #192734;
+    margin: 0 0 15px 0;
+}
+
+// dl, ol, ul {
+//     margin-top: 0;
+//     margin-bottom: 1rem;
+// }
+// ol, ul {
+//     padding-left: 2rem;
+// }
+.blog-sidebar {
+    position: sticky;
+    top: 100px;
+    width: 315px;
+    margin-left: 70px;
+}
+
+.b-sidebar-content {
+    background: #FFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 6px;
+    padding: 20px 15px;
+}
+
+.b-sidebar-content .accordion .accordion-item {
+    border: 0;
+}
+
+.sidebar-acc-main .sidebar-acc-title button {
+    background: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 44px;
+    align-items: center;
+    color: #192734;
+    padding: 0 0 15px 0;
+    box-shadow: none;
+    border-bottom: 1px solid #EFF0F1;
+}
+
+.sidebar-acc-main .sidebar-acc-title button i.fas {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #192734;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.sidebar-acc-main .accordion-body {
+    padding: 15px 0 0 0;
+}
+
+.b-sidebar-content span {
+    display: block;
+}
+
+.b-sidebar-content span a,
+.b-sidebar-content ol li a {
+    color: #4C5A67;
+    font-weight: 500;
+}
+
+.b-sidebar-content span a {
+    font-size: 14px;
+}
+
+.sub-accordion ol {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.sidebar-subscribe-box {
+    margin-top: 10px;
+}
+
+.sidebar-subscribe-box ul.social-ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 1px solid #EFF0F1;
+    border-bottom: 1px solid #EFF0F1;
+    width: 100%;
+    gap: 18px;
+}
+
+.ss-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.ss-top .ss-title {
+    max-width: 110px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #192734;
+}
+
+.ss-top .ss-img svg.arrow-line-svg {
+    position: absolute;
+    bottom: 17px;
+    right: 60px;
+}
+
+.s-subscribe-form input {
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    padding: 11px 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -.01em;
+    color: rgba(25, 39, 52, .5);
+    box-shadow: none !important;
+}
+
+.s-subscribe-form input[type="submit"] {
+    margin-top: 10px;
+    background: #0084FF;
+    color: #fff;
+}
+
+.read-more-link:hover {
+    color: var(--black-color);
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+.blog-content-wrapper ul li,
+.blog-content-wrapper ol li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #192734;
+}
+
+.dotnet_list {
+    padding-left: 2rem;
+    list-style-type: disc;
+}
+
+.sidebar-acc-main .sidebar-acc-title button i.fas {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #192734;
+    transition: transform .2s ease-in-out;
+}
+
+.sidebar-acc-main .sidebar-acc-title button.collapsed i.fas {
+    transform: rotate(180deg);
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: none;
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.sub-accordion ol {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+// ************************************************************launch_form***********************************************************
+.launch_form {
+    padding: 1.5rem 0 190px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+h2.service-title,
+h3.service-title,
+h3.section-title,
+h2.section-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--black-color);
+    margin: 0 0 30px 0;
+}
+
+h3.section-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--grey-color);
+    max-width: 935px;
+    margin: 0 auto 60px;
+    width: 100%;
+}
+
+.connect-form-wrapper {
+    // background: rgba(250,249,250,.5);
+    box-shadow: 0 0 30px rgb(162 182 212 / 15%);
+    backdrop-filter: blur(56px);
+    border-radius: 30px;
+    padding: 50px;
+    position: relative;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+section.connect-us-section .connect-form-wrapper:before {
+    position: absolute;
+    background: rgba(0, 186, 255, .15);
+    content: "";
+    bottom: 0;
+    width: 398.79px;
+    height: 231.06px;
+    left: 634px;
+    border-radius: 50%;
+    filter: blur(200px);
+    z-index: -1;
+}
+
+.form-wrapper .form-input {
+    margin-bottom: 30px;
+}
+
+.form-wrapper .form-input label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -.01em;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+.form-wrapper .form-input .form-control,
+.form-wrapper .form-input .form-select {
+    background-color: var(--white-color);
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: -.01em;
+    color: rgb(25 39 52 / 50%);
+    padding: 17px 20px;
+}
+
+.submit_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.blog-content-wrapper blockquote.wp-block-quote {
+    border-left: 4px solid #7432ff;
+}
+
+.has-luminous-vivid-orange-color {
+    padding-left: 15px;
+}
+
+// ****************************************************************Faq box******************************************************************
+section#faq-section {
+    padding: 80px 0 50px 0;
+}
+
+h2.service-title,
+h3.service-title,
+h3.section-title,
+h2.section-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #1d233a;
+    margin: 0 0 30px 0;
+}
+
+h3.section-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #7432ff;
+    max-width: 935px;
+    margin: 0 auto 60px;
+    width: 100%;
+}
+
+section.faq-section .new-accordion {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.new-accordion .accordion-item {
+    border: 0;
+    border-bottom: 1px solid #DFDFDF;
+    background: transparent;
+}
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.new-accordion .accordion-item button.accordion-button {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    background-color: transparent;
+    box-shadow: unset;
+    padding: 20px 0;
+}
+
+.new-accordion .accordion-item button.accordion-button::after {
+    content: "";
+    background-image: url(https://www.narolainfotech.com/wp-content/themes/narola-infotech/inc/img/minus.png);
+    background-size: auto;
+    transform: unset;
+    background-position: center;
+}
+
+.new-accordion .accordion-item .accordion-body {
+    padding: 0 0 20px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4c5a67;
+}
+
+.new-accordion .accordion-item button.accordion-button.collapsed::after {
+    content: "";
+    background-image: url(https://www.narolainfotech.com/wp-content/themes/narola-infotech/inc/img/plus.png);
+}
+
+.faq_box_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-content-wrapper .blog_img,
+.blog-content-wrapper .wp-block-image img,
+.blog-content-wrapper .wp-block-video video {
+    width: 100%;
+    height: 100%;
+}
+
+.blog-content-wrapper .wp-block-table table tr td {
+    border: 1px solid;
+    padding: 5px;
+    color: #7432ff;
+}
+@media (max-width:1199px) {
+    .blog-wrapper .blog-img {
+        height: 172px;
+    }
+}
+@media (max-width:767px) {
+    .blog-wrapper .blog-img {
+        height: auto;
+    }
+}
+@media (max-width:450px) {
+    .portfolio-filter > li{
+        padding: 0 13px 20px;
+    }
+}
+
+// ------------------------------------------------------------------------------------------------------------------------
+/* Styles for the sticky sidebar */
+
+// .post-details ,.post-sidebar-inner{
+//     padding-top: 30px;
+// }
+
+.post-sidebar.scrolled {
+    margin-top: 105px !important;
+    /* Other styles if needed */
+}
+
